@@ -13,8 +13,8 @@ lvugrin@irb.hr
 Ruđer Bošković Institute (RBI), Divison of Physical Chemistry, Laboratory for solid-state synthesis and catalysis, Ivan Halasz Group (Milling and Monitoring), Bijenička c. 54, 10000 Zagreb, Croatia  
 
 ## Authors and acknowledgment
-Leonarda Vugrin
-lvugrin@irb.hr 
+Leonarda Vugrin  
+lvugrin@irb.hr   
 Ruđer Bošković Institute (RBI), Divison of Physical Chemistry, Laboratory for solid-state synthesis and catalysis, Ivan Halasz Group (Milling and Monitoring), Bijenička c. 54, 10000 Zagreb, Croatia
 
 ## License
