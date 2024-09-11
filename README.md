@@ -8,14 +8,14 @@ This project includes MATLAB scripts and raw data used for analysis for the pape
 - **Script_2.py** is used for counting and analyzing complexes formed using the [name of the used package or library]. A complex is identified when [describe the criteria or methods for identification].
 
 ## Contact Information
-[Leonarda Vugrin]  
-[lvugrin@irb.hr]  
-[Ruđer Bošković Institute (RBI), Divison of Physical Chemistry, Laboratory for solid-state synthesis and catalysis, Ivan Halasz Group (Milling and Monitoring), Bijenička c. 54, 10000 Zagreb, Croatia]  
+Leonarda Vugrin
+lvugrin@irb.hr  
+Ruđer Bošković Institute (RBI), Divison of Physical Chemistry, Laboratory for solid-state synthesis and catalysis, Ivan Halasz Group (Milling and Monitoring), Bijenička c. 54, 10000 Zagreb, Croatia  
 
 ## Authors and acknowledgment
-[Leonarda Vugrin]  
-[lvugrin@irb.hr]  
-[Ruđer Bošković Institute (RBI), Divison of Physical Chemistry, Laboratory for solid-state synthesis and catalysis, Ivan Halasz Group (Milling and Monitoring), Bijenička c. 54, 10000 Zagreb, Croatia]  
+Leonarda Vugrin
+lvugrin@irb.hr 
+Ruđer Bošković Institute (RBI), Divison of Physical Chemistry, Laboratory for solid-state synthesis and catalysis, Ivan Halasz Group (Milling and Monitoring), Bijenička c. 54, 10000 Zagreb, Croatia
 
 ## License
 This project is licensed under the Creative Commons Attribution 4.0 International License. See the LICENSE file for details.
