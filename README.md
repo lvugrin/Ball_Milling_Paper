@@ -1,4 +1,4 @@
-# Ball_Milling_Paper
+# Ball_Milling_Paper-Experimental part
 
 ## Description
 This project includes MATLAB scripts and raw data used for analysis for the paper titled: **Molecular Dynamics Modelling of Mechanical Activation and Catalysis by Liquid Additives in Ball-Milling Mechanochemistry**. There are two folders, **"Folder_1"** and **"Folder_2"**, each containing one Python script with the same name in `.py` format.
