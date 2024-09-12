@@ -37,8 +37,7 @@ This project has two python scripts which are used in the paper titled : Molecul
 - The Counting_Complexes.py script was written to count the number of complexes formed by a \ce{K+} ion and a 18c6 molecule using the MDAnalysis suite. A complex was identified when a \ce{K+} ion was within 3.4 Å of all oxygen atoms in a single 18c6 residue.
 
 ## Contact Information
-Leonarda Vugrin  
-lvugrin@irb.hr    
+Leonarda Vugrin (lvugrin@irb.hr) 
 Ruđer Bošković Institute (RBI), Divison of Physical Chemistry, Laboratory for solid-state synthesis and catalysis, Ivan Halasz Group (Milling and Monitoring), Bijenička c. 54, 10000 Zagreb, Croatia      
 
 Rupam Gayen (rupam.gayen@fau.de)  
@@ -46,7 +45,6 @@ Friedrich-Alexander-University Erlangen-Nürnberg (FAU), Faculty of Science, Dep
 
 ## Authors and acknowledgment
 Leonarda Vugrin  
-lvugrin@irb.hr   
 Ruđer Bošković Institute (RBI), Divison of Physical Chemistry, Laboratory for solid-state synthesis and catalysis, Ivan Halasz Group (Milling and Monitoring), Bijenička c. 54, 10000 Zagreb, Croatia  
 
 Rupam Gayen  
