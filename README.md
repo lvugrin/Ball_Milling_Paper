@@ -1,11 +1,15 @@
 # Ball_Milling_Paper-Experimental part
 
 ## Description
-This project includes MATLAB scripts and raw data used for analysis for the paper titled: **Molecular Dynamics Modelling of Mechanical Activation and Catalysis by Liquid Additives in Ball-Milling Mechanochemistry**. There are two folders, **"Folder_1"** and **"Folder_2"**, each containing one Python script with the same name in `.py` format.
+This project includes MATLAB scripts, data used for powder X-ray diffraction (PXRD) and Fourier transformed infrared spectroscopy (FTIR) analysis for the paper titled: **Molecular Dynamics Modelling of Mechanical Activation and Catalysis by Liquid Additives in Ball-Milling Mechanochemistry**. There are four folders, **"FTIR data"**, **"PXRD data"**, **"Raman data"** and **"MATLAB scripts"**, each containing files in `.ASC`, `.m` or `.xy` format. Figures are made in MATLAB software and are depicted in in `.fig` or in `.png` format.
 
-- **Script_1.py** was developed for analyzing specific data, tracking certain entities or processes during simulations. This script allows [describe the functionality of the script].
-  
-- **Script_2.py** is used for counting and analyzing complexes formed using the [name of the used package or library]. A complex is identified when [describe the criteria or methods for identification].
+- **2d Time-Resolved Raman plot.m** was developed for analyzing Raman data collected in a real time. This script allow plotting of two-dimensional Raman plot for detecting changes in vibration Raman bands during time.
+
+- **Least Square Analysis method.m** was used for deeper analysis of Raman spectra and .
+
+- **Jar_substracting.m** was developed for editing the raw data by better substraction of the milling vessel and removing its contribution from. 
+
+- **FTIR plot.m** and **PXRD plot.m** is used for analyzing and plotting FTIR spectra and diffractograms using the raw data. 
 
 ## Contact Information
 Leonarda Vugrin  
