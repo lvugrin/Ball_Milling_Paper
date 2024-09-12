@@ -41,7 +41,7 @@ Leonarda Vugrin
 lvugrin@irb.hr    
 Ruđer Bošković Institute (RBI), Divison of Physical Chemistry, Laboratory for solid-state synthesis and catalysis, Ivan Halasz Group (Milling and Monitoring), Bijenička c. 54, 10000 Zagreb, Croatia      
 
-Rupam Gayen (rupam.gayen@fau.de)
+Rupam Gayen (rupam.gayen@fau.de)  
 Friedrich-Alexander-University Erlangen-Nürnberg (FAU), Faculty of Science, Department of Physics, PULS Group, Interdisciplinary Center for Nanostructured Films (IZNF), Cauerstrasse 3, 91058, Germany
 
 ## Authors and acknowledgment
@@ -49,7 +49,7 @@ Leonarda Vugrin
 lvugrin@irb.hr   
 Ruđer Bošković Institute (RBI), Divison of Physical Chemistry, Laboratory for solid-state synthesis and catalysis, Ivan Halasz Group (Milling and Monitoring), Bijenička c. 54, 10000 Zagreb, Croatia  
 
-Rupam Gayen
+Rupam Gayen  
 Friedrich-Alexander-University Erlangen-Nürnberg (FAU), Faculty of Science, Department of Physics, PULS Group, Interdisciplinary   Center for Nanostructured Films (IZNF), Cauerstrasse 3, 91058, Germany  
 
 ## License
