@@ -4,6 +4,7 @@
 This project includes MATLAB scripts, data used for powder X-ray diffraction (PXRD) and Fourier-transformed infrared spectroscopy (FTIR) analysis as part of the research paper titled: **Molecular Dynamics Modelling of Mechanical Activation and Catalysis by Liquid Additives in Ball-Milling Mechanochemistry**. The project is structured into four main directories: **"FTIR data"**, **"PXRD data"**, **"Raman data"** and **"MATLAB scripts"**, each containing files in formats such as `.ASC`, `.m` or `.xy`. The figures produced using the data are created with MATLAB software and saved in `.fig` or `.png` format.
 
 **Project Structure**  
+
 FTIR data - Contains FTIR spectra in .ASC format, which can be analyzed using the provided MATLAB scripts.  
 
 PXRD data - Contains X-ray diffraction data in .xy format for further analysis and plotting.  
