@@ -69,8 +69,8 @@ def list_residues_and_clusters(u, cutoff_radius=10.0, cluster_size_threshold=5):
 
 if __name__ == "__main__":
     # Replace with your actual file names
-    tpr_file = '/home/woody/mpt4/mpt4022h/Velocity/publish/waterhai/m2000/12000_375mdrun10.tpr'
-    xtc_file = '/home/woody/mpt4/mpt4022h/Velocity/publish/waterhai/m2000/12000_375mdrun10.xtc'
+    tpr_file = '/home/12000_375mdrun10.tpr'
+    xtc_file = '/home/12000_375mdrun10.xtc'
 
     # Load the topology and trajectory
     u = mda.Universe(tpr_file, xtc_file)
@@ -79,7 +79,7 @@ if __name__ == "__main__":
     all_results = list_residues_and_clusters(u)
 
     # Save results to a file
-    output_file = '/home/woody/mpt4/mpt4022h/Velocity/publish/waterhai/m200/ca1s_2000_375.xvg'
+    output_file = '/home/ca1s_2000_375.xvg'
     with open(output_file, 'w') as f:
         f.write("frame_number\tnumber_of_cluster\tnumber_of_residues_notincluster\n")
         for frame_number, number_of_cluster, number_of_residues_notincluster in all_results:
