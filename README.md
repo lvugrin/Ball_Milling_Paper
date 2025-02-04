@@ -35,7 +35,7 @@ This project has thre python scripts which are used in the paper titled : Molecu
 
 - The hydrates_species.py script was developed to specifically monitor the evolution of hydrated species and provide insights into the catalytic effects of water. 
 
-- The count_complexes.py script was written to count the number of complexes formed by a K+ ion and a 18c6 molecule using the MDAnalysis suite. A complex was identified when a K+ ion was within 3.4 Å of all oxygen atoms in a single 18c6 residue.
+- The complex_count.py script was written to count the number of complexes formed by a K+ ion and a 18c6 molecule using the MDAnalysis suite. A complex was identified when a K+ ion was within 3.4 Å of all oxygen atoms in a single 18c6 residue.
 
 ## Contact Information
 Leonarda Vugrin (lvugrin@irb.hr)   
