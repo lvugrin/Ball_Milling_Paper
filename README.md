@@ -28,13 +28,14 @@ MATLAB scripts - This directory contains MATLAB scripts developed for processing
 # Simulation part
 
 ## Description
-This project has two python scripts which are used in the paper titled : Molecular Dynamics Modelling of Mechanical Activation and Catalysis by Liquid Additives in Ball-Milling Mechanochemistry. There are two folders "Cluster_Analysis" and "Counting_Complexes with one Python script each of the same name in py format.
+This project has thre python scripts which are used in the paper titled : Molecular Dynamics Modelling of Mechanical Activation and Catalysis by Liquid Additives in Ball-Milling Mechanochemistry. There is one folder "Cluster_Analysis" that contains the three scripts.
 
 
-- The Cluster_Analysis.py script was developed to track the number of roaming entities and agglomerates with time in the simulations. An agglomerate is defined as a collection of entities ( K , Cl and 18c6) which have more than 5 neighbours within 10 Å. Roaming entities are the ones which are not part of an agglomerate.
+- The Cluster_Analysis.py script deals with counting freely roaming entities, small fragment groups and agglomerates.
 
+- The hydrates_species.py script was developed to specifically monitor the evolution of hydrated species and provide insights into the catalytic effects of water. 
 
-- The Counting_Complexes.py script was written to count the number of complexes formed by a K+ ion and a 18c6 molecule using the MDAnalysis suite. A complex was identified when a K+ ion was within 3.4 Å of all oxygen atoms in a single 18c6 residue.
+- The count_complexes.py script was written to count the number of complexes formed by a K+ ion and a 18c6 molecule using the MDAnalysis suite. A complex was identified when a K+ ion was within 3.4 Å of all oxygen atoms in a single 18c6 residue.
 
 ## Contact Information
 Leonarda Vugrin (lvugrin@irb.hr)   
