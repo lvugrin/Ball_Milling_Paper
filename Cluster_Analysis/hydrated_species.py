@@ -11,7 +11,7 @@ def analyze_residues(u):
     with open(output_file, 'w') as f:
         header = ("Frame Number\tHydrated Crowns\t"
                   "Crowns_with_Crowns_withwater\tCrowns_with_Crowns_nowater\tHydrated_K_alone\t"
-                  "HydratedK_kcl\tK_with_Cl\tavg_res_sol\tavg_K_Sol\n")
+                  "HydratedK_kcl\tK_with_Cl\n")
         f.write(header)
         print(header.strip())
 
@@ -60,9 +60,7 @@ def analyze_residues(u):
             has_SOL_within_4_count_K = 0
             RES_with_RES_or_Cl_yes_SOL_or_K = 0
             K_with_SOL_within_4_no_RES_has_otherK_Cl = 0
-            adjacency_matrix = (distance_matrix < cutoff_radius).astype(int)
-            graph = csr_matrix(adjacency_matrix)
-            n_components, labels = connected_components(csgraph=graph, directed=False)
+
 
             for i, (resid, resname) in enumerate(res_atoms):
                 if resname == "RES":
@@ -89,7 +87,6 @@ def analyze_residues(u):
                     for d in distances_to_SOL:
                         if d <= 3.4:
                             has_SOL_within_4 = True
-                            has_SOL_within_4_count_RES += 1
                             break
 
                     no_K_within_4 = True
@@ -148,8 +145,7 @@ def analyze_residues(u):
 
                     if has_SOL_within_6 and no_K_within_4 and has_RES_within_4:
                         RES_with_RES_or_Cl_yes_SOL_or_K += 1
-            ratio_res_hydration = (has_SOL_within_4_count_RES / RES_with_SOL_within_4_no_K_no_RES
-                                   if RES_with_SOL_within_4_no_K_no_RES > 0 else 0)
+
             for i, (resid, resname) in enumerate(res_atoms):
                 if resname == "K":
                     # Calculate distances to various residue types
@@ -169,23 +165,6 @@ def analyze_residues(u):
                         distance_matrix[i, j]
                         for j, (_, rn) in enumerate(res_atoms) if rn == "Cl"
                     ]
-
-                    # Count K_with_SOL_within_4_no_RES
-                    has_SOL_within_3_4 = False
-                    for d in distances_to_SOL:
-                        if d <= 3.4:
-                            has_SOL_within_3_4 = True
-                            has_SOL_within_4_count_K += 1
-                            break
-
-                    no_RES_within_3_4 = True
-                    for d in distances_to_RES:
-                        if d <= 3.0:
-                            no_RES_within_3_4 = False
-                            break
-
-                    if has_SOL_within_3_4 and no_RES_within_3_4:
-                        K_with_SOL_within_4_no_RES += 1
 
                     # Count K_with_SOL_within_4_no_RES
                     has_SOL_within_3_4 = False
@@ -270,11 +249,9 @@ def analyze_residues(u):
                     if no_SOL_within_4 and no_RES_within_4 and (has_otherK_within_3_2 or has_Cl_within_3_2):
                         K_with_K_or_Cl_no_SOL_or_RES += 1
 
-            ratio_K_hydration = (has_SOL_within_4_count_K / K_with_SOL_within_4_no_RES
-                                 if K_with_SOL_within_4_no_RES > 0 else 0)
             result_line = (f"{ts.frame}\t{RES_with_SOL_within_4_no_K_no_RES}\t"
                            f"{RES_with_RES_or_Cl_yes_SOL_or_K}\t{RES_with_RES_or_Cl_no_SOL_or_K}\t{K_with_SOL_within_4_no_RES_no_otherK}\t"
-                           f"{K_with_SOL_within_4_no_RES_has_otherK_Cl}\t{K_with_K_or_Cl_no_SOL_or_RES}\t{ratio_res_hydration:.2f}\t{ratio_K_hydration:.2f}\n")
+                           f"{K_with_SOL_within_4_no_RES_has_otherK_Cl}\t{K_with_K_or_Cl_no_SOL_or_RES}\n")
             f.write(result_line)
             print(result_line.strip())
 
