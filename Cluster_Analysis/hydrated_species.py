@@ -5,7 +5,7 @@ from scipy.sparse.csgraph import connected_components
 from scipy.sparse import csr_matrix
 
 
-def analyze_residues(u, cutoff_radius=10.0, cluster_size_threshold=5, small_fragment_radius=5.0):
+def analyze_residues(u):
     output_file = 'result.xvg'
 
     with open(output_file, 'w') as f:
