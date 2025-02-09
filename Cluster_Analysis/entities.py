@@ -84,8 +84,8 @@ def analyze_residues(u, cluster_size_threshold=5, small_fragment_radius=3.4):
                         neighbor_count = np.sum(neighbors < small_fragment_radius) - 1
                         if 1 <= neighbor_count <= 3:
                             small_fragments.append((resid, resname))
-                        elif neighbor_count == 0:
-                            freely_roaming_fragments.append((resid, resname))
+                        elif np.all(neighbors >= 5.0):  # Ensure no neighbors within 5 Å
+                           freely_roaming_fragments.append((resid, resname))
                             if resname == "RES":
                                 freely_roaming_sol_fragments += 1
                             elif resname == "K":
